@@ -174,6 +174,35 @@
 // const num1 = [2,3,4,5,6];
 // const numero = num1.map(test);
 // console.log(numero);
-const num1 = [2,3,4,5,6];
-const ner = num1.map(x=>x*2);
-console.log(ner);
+// const num1 = [2,3,4,5,6];
+// const ner = num1.map(x=>x*2);
+// console.log(ner);
+//----------------Error handling, "try..catch" Program------------///////
+// function myFunction() {
+//   var message, x;
+//   message = document.getElementById("p01");
+//   message.innerHTML = "";
+//   x = document.getElementById("demo").value;
+//   try { 
+//     if(x == "")  throw "Empty";
+//     if(isNaN(x)) throw "not a number";
+//     x = Number(x);
+    
+//     if(x < 5)  throw "too low";
+//     if(x > 10)   throw "too high";
+//     message.innerHTML = x + "is a correct number";
+//   }
+//   catch(err) {
+//     message.innerHTML =  x + " is " + err;
+//   }
+// }
+//----------------Recursive Functions-------------------------//////////
+function pow(x, n) {
+        if (n == 1) {
+          return x;
+        } else {
+          return x * pow(x, n - 1);
+        }
+      }
+      
+      console.log(pow(3, 3) ); 
